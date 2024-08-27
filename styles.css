@@ -1,0 +1,103 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #797878;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #bbbaba;
+    color: rgb(226, 152, 177);
+    padding: 40px 0;
+    box-shadow: 5px 5px 5px 5px rgba(240, 167, 209, 0.2);
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #f1aee6;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #f755b3;
+    text-decoration: underline;
+    font-style: italic;
+    font-weight: 900;
+}
+
+.content {
+    margin-top: 60px;
+    padding: 20px;
+}
+
+section {
+    padding: 50px;
+    margin: 20px 0;
+    border: 1px solid #f563d5;
+}
+
+section:nth-child(even) {
+    background-color: #f1aee6;
+}
+
+.slider {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+}
+
+.slide img {
+    width: 100%;
+    display: block;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
